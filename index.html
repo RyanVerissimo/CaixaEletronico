@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Eletrônico</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <header>
+        <h1>Caixa Eletrônico</h1>
+    </header>
+    <main>
+        <section class="container">
+            <div class="saldo-container">
+                <div class="saldo-info">
+                    <strong>Saldo:</strong>
+                    <span id="saldo" class="saldo-visible">R$ 1000,00</span>
+                    <span id="saldoHidden" class="saldo-hidden">******</span>
+                </div>
+                <button id="toggleSaldo" class="button"><i class="ph ph-eye"></i></button>
+            </div>
+            <div class="transaction-buttons">
+                <button id="saqueBtn" class="button">Fazer Saque</button>
+                <button id="depositoBtn" class="button">Fazer Depósito</button>
+            </div>
+            <div id="saqueForm" class="hidden form">
+                <input type="number" id="saqueInput" placeholder="Valor do Saque">
+                <button id="saqueConfirm" class="button">Confirmar Saque</button>
+            </div>
+            <div id="depositoForm" class="hidden form">
+                <input type="number" id="depositoInput" placeholder="Valor do Depósito">
+                <button id="depositoConfirm" class="button">Confirmar Depósito</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>
